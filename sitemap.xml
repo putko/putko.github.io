@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://aytactopal.com/</loc>
+    <lastmod>2020-12-26T21:16:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/tags/go/</loc>
+    <lastmod>2020-12-26T21:16:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/tags/hugo/</loc>
+    <lastmod>2020-12-26T21:16:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/posts/make-github-your-own-cms-using-hugo/</loc>
+    <lastmod>2020-12-26T21:16:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/posts/</loc>
+    <lastmod>2020-12-26T21:16:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/tags/static-page/</loc>
+    <lastmod>2020-12-26T21:16:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/tags/</loc>
+    <lastmod>2020-12-26T21:16:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/about/</loc>
+    <lastmod>2020-12-20T21:37:57+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/tags/hello/</loc>
+    <lastmod>2020-12-20T21:37:57+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/posts/hello-world/</loc>
+    <lastmod>2020-12-20T21:37:57+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/tags/software/</loc>
+    <lastmod>2020-12-20T21:37:57+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aytactopal.com/categories/</loc>
+  </url>
+  
+</urlset>

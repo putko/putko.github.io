@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Ozan Topal | Make Github Your Own CMS Using Hugo </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Senior Software Engineer">
+    <meta name="google-site-verification" content="hbT_CX1Jcs5fqLhezNWYIEyReycSElJa0sPQa0vyovE">
+    
+    <link rel="stylesheet"
+          href="https://aytactopal.com/css/style.min.28b1ee64753ae7e3e46327acb742498816170bd217640dd4bf69240697a4d5e4.css"
+          integrity="sha256-KLHuZHU65&#43;PkYyest0JJiBYXC9IXZA3Uv2kkBpek1eQ="
+          crossorigin="anonymous"
+          type="text/css">
+    
+    <link rel="stylesheet"
+        href="https://aytactopal.com/css/markupHighlight.min.9755453ffb7bc4cd220f86ebb5922107b49f193cc62fc17e9785d27b33a8bf5b.css"
+        integrity="sha256-l1VFP/t7xM0iD4brtZIhB7SfGTzGL8F&#43;l4XSezOov1s="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://aytactopal.com/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aytactopal.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aytactopal.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aytactopal.com/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://aytactopal.com/posts/make-github-your-own-cms-using-hugo/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://aytactopal.com/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Make Github Your Own CMS Using Hugo"/>
+<meta name="twitter:description" content="Hello everyone. Last a few weeks I was thinking about making ozantopal.com great again. 😄 On that days, Hugo entered my life, thanks to Furkan&rsquo;s advice. Hugo is a framework for building websites. It&rsquo;s actually a static page generator. It&rsquo;s written with Go and Hugo is quite fast.
+After all those compliment to Hugo; I would like to return my main subject. Today, I wanna tell you about migration of my blog to Hugo and how I maintain new posts on that new &lsquo;cms&rsquo;."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://aytactopal.com/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Ozan Topal</a></h3>
+            <div class="description">
+                <p>Senior Software Engineer</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://www.linkedin.com/in/ozantopal" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/ozantopal/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://twitter.com/ozanymous/" rel="me" aria-label="Twitter">
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Ozan Topal 2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/posts/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            <div class="post-title">
+                <h3>Make Github Your Own CMS Using Hugo</h3>
+                
+            </div>
+
+            <p>Hello everyone. Last a few weeks I was thinking about making ozantopal.com great again. 😄 On that days, <a href="https://gohugo.io/">Hugo</a> entered my life, thanks to <a href="http://bozdag.dev/">Furkan</a>&rsquo;s advice. Hugo is a framework for building websites. It&rsquo;s actually a static page generator. It&rsquo;s written with <a href="https://golang.org/">Go</a> and Hugo is quite fast.</p>
+<p>After all those compliment to Hugo; I would like to return my main subject. Today, I wanna tell you about migration of my blog to Hugo and how I maintain new posts on that new &lsquo;cms&rsquo;.</p>
+<h1 id="requirements">Requirements</h1>
+<ul>
+<li>A <a href="https://github.com/">GitHub</a> account</li>
+<li>Basic computer knowledge</li>
+<li>A registered domain-name(optional)</li>
+</ul>
+<p>Basic <a href="https://git-scm.com">git</a> knowledge is welcome but not mandatory.</p>
+<h1 id="steps-of-creating-your-own-website">Steps Of Creating Your Own Website</h1>
+<h2 id="installation-of-git">Installation Of Git</h2>
+<p>This has operating system dependent answer and that&rsquo;s why I&rsquo;m not going to explain how to install git but you can find the answer on <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">this link</a>. You need to follow the instructions for the operating system you are using.</p>
+<h2 id="installation-of-hugo">Installation Of Hugo</h2>
+<p>This also has operating system dependent answer but I feel that I need to explain that part clearly.</p>
+<ul>
+<li>On <strong>Linux&amp;MacOS</strong>:<br>
+To install Hugo via <a href="https://brew.sh/">brew</a>, run this command on terminal
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">brew install hugo
+</code></pre></div></li>
+<li>On <strong>Windows</strong>:
+To install Hugo via <a href="https://chocolatey.org/">chocolately</a>, run this command on terminal
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">choco install hugo -confirm
+</code></pre></div><p>P.S: In case of chocolately is not installed on your machine run the command below on powershell:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))
+</code></pre></div></li>
+</ul>
+<p>After all that&rsquo;s done, you can check whether hugo is installed or not via running command below on terminal:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">hugo version
+</code></pre></div><p>This should return something like <em>Hugo Static Site Generator v0.79.1-EDB9248D windows/amd64 BuildDate: 2020-12-19T15:44:19Z</em></p>
+<h2 id="generating-new-site">Generating New Site</h2>
+<p>Before I begin, I wanna remind you that I&rsquo;m going to explain happy path here. In case of something went wrong, I strongly recommend you to refer <a href="https://gohugo.io/getting-started/quick-start/">Hugo&rsquo;s Documentation</a>.</p>
+<p>First, we create a new site by running command</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">hugo new site {name-of-site}
+</code></pre></div><p>Note: you should replace &ldquo;{name-of-site}&rdquo; with name of your site. I prefer here &ldquo;my-sample-blog&rdquo; as name.</p>
+<p>That command gonna create a new folder with name of your site and generate number of different folders and files. We&rsquo;ll pay attention on that files later but first you need to select a theme for your website. You can take a tour for Hugo <a href="https://themes.gohugo.io/">themes</a> for a while before but I&rsquo;m going to explain <a href="https://themes.gohugo.io/gohugo-theme-ananke/">Ananke Theme</a>. First, download the theme from Github and add it to your site&rsquo;s themes directory:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+</code></pre></div><p>After download is finished you need to define your theme on your <strong>config.toml</strong> file. For doing that run command below:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml
+</code></pre></div><p>After that step you can serve your site by running command below but as you can realize you need to customize your site and for doing that you need to refer to theme&rsquo;s <a href="https://github.com/theNewDynamic/gohugo-theme-ananke">documentation</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">hugo server -D
+</code></pre></div><h2 id="deployment-of-your-website-on-github">Deployment Of Your Website On GitHub</h2>
+<p>When your customization is ready for production(i.e. you&rsquo;re happy what you see when you check your site), then you need to create two repository on your github account. To do that use this url: <a href="http://github.com/new">http://github.com/new</a>. One of your repository should named as &ldquo;{your-github-username}.github.io&rdquo; for hosting your page static page. Second repository can be named as you prefer.</p>
+<p>Before pushing our codes to GitHub, create a &ldquo;.github/workflows&rdquo; folder on root of your site&rsquo;s codes and then create a master.yml file under that folder. You can prefer anything else instead of master but file extension must be &ldquo;.yml&rdquo; and add codes right below:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">name: CI
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Update Theme
+        # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
+        run: git submodule update --init --recursive
+      - name: Install Dependencies
+        run: sh ./install.sh
+      - name: Build
+        run: hugo      
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: public
+          path: public
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Download Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: public
+          path: public
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.TOKEN }}
+          external_repository: {your-github-username}/{your-github-username}.github.io
+          publish_dir: ./public
+          #   keep_files: true
+          user_name: {Your Name}
+          user_email: {Your Email}
+          publish_branch: master
+          cname: {yourdomain}
+
+</code></pre></div><p>I want to explain what&rsquo;s going on here but it&rsquo;s about another concept named CI/CD and this blog post is not true place for doing that. Basically, we define here a pipeline for GitHub Actions to build our Hugo page and deploy it to GitHub&rsquo;s free <a href="https://pages.github.com/">Pages</a>. You just need to focus on line #43, #46, #47, #49 to replace information with your own. Note: Leave line #42 as same as it&rsquo;s.</p>
+<p>After that create a file with name install.sh and this name is mandatory because we use it on our pipeline&rsquo;s file line #18. Then add commands I share below to this file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"># Install brew
+/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;
+
+# Install hugo
+brew install hugo
+</code></pre></div><p>Last but not least visit <a href="https://github.com/settings/tokens">GitHub&rsquo;s Personal Access Token Page</a> and generate new token with whole repo scope selected.</p>
+<p>Copy this token and <a href="https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-an-organization">generate</a> new repository secret on <a href="https://github.com/%7Byour-github-username%7D/%7Byour-codebase%7D/settings/secrets/actions">https://github.com/{your-github-username}/{your-codebase}/settings/secrets/actions</a> with name &ldquo;TOKEN&rdquo; on repository of your blog&rsquo;s code. Name of this secret is a must cause of master.yml file&rsquo;s line #42.</p>
+<p>Then you finally need to push your code by running those git commands</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">git add .
+git commit -m &#34;{Commit MSG}&#34;
+git remote add origin https://github.com/{your-github-username}/{your-codebase-repo-name}.git
+git push origin master
+</code></pre></div><p>You need to customize text like &ldquo;{&hellip;}&rdquo; with your own and that&rsquo;s it. Your page is active on http://{your-github-username}.github.io/ and if you have your domain name, then you just need to redirect your domain to IP address of Github Pages, aka 185.199.108.153.</p>
+<h2 id="creating-content">Creating Content</h2>
+<p>I hope you enjoy and can create your own page. After all these are done. You can easily use your codebase repository to create your content under &ldquo;/content/posts&rdquo; folder as markdown(.md) file.</p>
+<p>I hope this blog post was helpful for you. Keep blogging!</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                <span class="separator"><a class="tag" href="/tags/go/">go</a><a class="tag" href="/tags/hugo/">hugo</a><a class="tag" href="/tags/static-page/">static page</a></span>
+
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://aytactopal.com/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://aytactopal.com/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://aytactopal.com/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

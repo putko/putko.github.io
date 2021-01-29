@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://aytactopal.com/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Dec 2020 21:16:17 +0300</lastBuildDate><atom:link href="https://aytactopal.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make Github Your Own CMS Using Hugo</title>
+      <link>https://aytactopal.com/posts/make-github-your-own-cms-using-hugo/</link>
+      <pubDate>Sat, 26 Dec 2020 21:16:17 +0300</pubDate>
+      
+      <guid>https://aytactopal.com/posts/make-github-your-own-cms-using-hugo/</guid>
+      <description>Hello everyone. Last a few weeks I was thinking about making ozantopal.com great again. 😄 On that days, Hugo entered my life, thanks to Furkan&amp;rsquo;s advice. Hugo is a framework for building websites. It&amp;rsquo;s actually a static page generator. It&amp;rsquo;s written with Go and Hugo is quite fast.
+After all those compliment to Hugo; I would like to return my main subject. Today, I wanna tell you about migration of my blog to Hugo and how I maintain new posts on that new &amp;lsquo;cms&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://aytactopal.com/about/</link>
+      <pubDate>Sun, 20 Dec 2020 21:37:57 +0300</pubDate>
+      
+      <guid>https://aytactopal.com/about/</guid>
+      <description>⭐ Chess Player @ lichess.org and Chess.com
+⭐ Senior Software Engineer @ XYZ Teknoloji
+⭐ Develops C# and JS and also interests Go
+Skills I&amp;rsquo;ve experienced:
+→ Architectural Design, Design Patterns
+→ Tiered Arch., MVC, MVVM, Microservices
+→ OOP, SOLID, TDD, DDD, SOA, ABC, XYZ and any other abbreviations&amp;hellip;
+→ Scrum, Kanban, Pair Programming, Code Review
+→ C#, JS, Go
+→ MySQL, MSSQL, PostgreSQL, MongoDB, CosmosDB
+→ Azure, AWS, Google Cloud</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://aytactopal.com/posts/hello-world/</link>
+      <pubDate>Sun, 20 Dec 2020 21:37:57 +0300</pubDate>
+      
+      <guid>https://aytactopal.com/posts/hello-world/</guid>
+      <description>Hello there, this is Ozan and this is next one of my numerous blogging trials. Hopefully, this time I keep continue to blogging.
+Content of this blog will be mostly about programming but still I do not guarantee that I won&amp;rsquo;t write on different topics.
+Until I see you all soon, keep digging!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aytactopal.com/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://aytactopal.com/archives/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
